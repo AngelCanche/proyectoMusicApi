@@ -21,4 +21,20 @@ public class AlbumsService implements IAlbumsService {
 		return repoAlbums.findAll();
 	}
 
+	@Override
+	public void guardar(Album album) {
+		// TODO Auto-generated method stub
+		repoAlbums.save(album);
+	}
+
+	
+
+	@Override
+	public void eliminar(int idAlbum) {
+		// TODO Auto-generated method stub
+		repoAlbums.deleteById(idAlbum);
+	}
+
+	
+
 }
